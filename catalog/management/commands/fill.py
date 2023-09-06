@@ -7,7 +7,6 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         Category.objects.all().delete()
-        Product.objects.all().delete()
         return os.system("python manage.py loaddata data.json")
 
 
