@@ -1,0 +1,14 @@
+{% extends 'catalog/base.html' %}
+{% block content %}
+{% for object in objects_list %}
+    <div class="features">
+        <h1> {{ object.name }}</h1>
+        <p>Описание: {{object.description}}</p>
+        image
+        <p>Цена: {{object.price}}</p>
+        <p>Категория: {{object.created_at}}</p>
+        <p>Создан: {{object.created_at}}</p>
+        <p>Обновлен: {{object.updated_at}}</p>
+    </div>
+{% endfor %}
+{% endblock %}
