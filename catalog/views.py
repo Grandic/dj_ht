@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 
 from catalog.forms import ProductForm
-from catalog.models import Product
+from catalog.models import Product, Version
 from django.views.generic import ListView, DetailView, CreateView, UpdateView
 
 
