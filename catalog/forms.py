@@ -28,4 +28,4 @@ class ProductForm(forms.ModelForm):
 class VersionForm(forms.ModelForm):
     class Meta:
         model = Version
-        fields = ('version_name', )
+        fields = '__all__'
