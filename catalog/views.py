@@ -7,16 +7,25 @@ from catalog.forms import ProductForm, VersionForm
 from catalog.models import Product, Version
 from django.views.generic import ListView, DetailView, CreateView, UpdateView
 
+from users.models import User
+
 
 class ProductListView(ListView):
     model = Product
     template_name = 'catalog/index.html'
 
 
+
 class ProductDetailView(DetailView):
     model = Product
     template_name = 'catalog/product.html'
 
+    def get_context_data(self, **kwargs):
+        context_data = super().get_context_data(**kwargs)
+        version = Version.objects.filter(product=context_data['object'], is_active=True).last()
+        context_data['version'] = version
+
+        return context_data
 
 def index2(request):
     return render(request, 'catalog/index2.html')
@@ -41,6 +50,13 @@ class ProductCreateView(CreateView):
     model = Product
     form_class = ProductForm
     success_url = reverse_lazy('catalog:main')
+
+    def form_valid(self, form):
+        self.object = form.save()
+        self.object.owner = self.request.user
+        self.object.save()
+
+        return super().form_valid(form)
 
 
 class ProductUpdateView(UpdateView):
@@ -69,3 +85,4 @@ class ProductUpdateView(UpdateView):
                     formset.save()
 
         return super().form_valid(form)
+

@@ -1,0 +1,267 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "name": "Комплектующие",
+      "description": "Комплектующие для PC"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 5,
+    "fields": {
+      "name": "Аксесуары",
+      "description": "Мыши и клавиатуры\r\nUSB Флешки и жесткие диски\r\nСумки и рюкзаки для ноутбуков\r\nМанипуляторы и аксессуары\r\nАудио\r\nАксессуары для ноутбуков\r\nЭлектропитание\r\nСтолики для ноутбуков\r\nКабели и разветвители\r\nБатарейки и аккумуляторы\r\nАксессуары для накопителей\r\nТовары для гейминга\r\nПолезные аксессуары"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 6,
+    "fields": {
+      "name": "Животные",
+      "description": "Братья и не братья-)"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "Процессор",
+      "description": "10900K. Лучший процессор для работы и развлечений",
+      "image": "",
+      "category": 4,
+      "price": 6000,
+      "created_at": "2023-09-10T11:07:20.141Z",
+      "updated_at": "2023-09-26T19:41:40.743Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name": "Видеокарта",
+      "description": "RTX 3080",
+      "image": "",
+      "category": 4,
+      "price": 55000,
+      "created_at": "2023-09-10T11:08:02.652Z",
+      "updated_at": "2023-09-10T11:08:02.652Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "name": "Процессор",
+      "description": "13900KS",
+      "image": "",
+      "category": 4,
+      "price": 50000,
+      "created_at": "2023-09-10T11:14:42.108Z",
+      "updated_at": "2023-09-10T11:14:42.108Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+      "name": "7900X3D",
+      "description": "AM5",
+      "image": "",
+      "category": 4,
+      "price": 78000,
+      "created_at": "2023-09-10T11:15:18.056Z",
+      "updated_at": "2023-09-10T11:15:18.056Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+      "name": "13700KS",
+      "description": "Процессор для игр",
+      "image": "",
+      "category": 4,
+      "price": 40000,
+      "created_at": "2023-09-10T11:16:08.697Z",
+      "updated_at": "2023-09-10T11:16:08.697Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 9,
+    "fields": {
+      "name": "13600KF",
+      "description": "Середнечек",
+      "image": "",
+      "category": 4,
+      "price": 33000,
+      "created_at": "2023-09-10T11:16:56.954Z",
+      "updated_at": "2023-09-27T20:40:08.022Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 10,
+    "fields": {
+      "name": "RTX4090",
+      "description": "Лучшая игровая видеокарта",
+      "image": "",
+      "category": 4,
+      "price": 200000,
+      "created_at": "2023-09-10T11:17:30.550Z",
+      "updated_at": "2023-09-10T11:17:30.550Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 11,
+    "fields": {
+      "name": "RX7900XTX",
+      "description": "из лагеря красных.",
+      "image": "",
+      "category": 4,
+      "price": 120000,
+      "created_at": "2023-09-10T11:18:33.135Z",
+      "updated_at": "2023-09-26T19:43:34.208Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 12,
+    "fields": {
+      "name": "MSI Z790-ACE",
+      "description": "Топовая метеринка",
+      "image": "",
+      "category": 5,
+      "price": 120000,
+      "created_at": "2023-09-10T11:21:19.118Z",
+      "updated_at": "2023-09-26T19:58:07.758Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 13,
+    "fields": {
+      "name": "Кошка",
+      "description": "Отдам кошку в добрые руки",
+      "image": "categories/cat.png",
+      "category": 6,
+      "price": 0,
+      "created_at": "2023-09-11T19:50:47.021Z",
+      "updated_at": "2023-09-11T19:50:47.021Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 15,
+    "fields": {
+      "name": "Собака",
+      "description": "Псина породистая",
+      "image": "categories/_normal.jpeg",
+      "category": 6,
+      "price": 40000,
+      "created_at": "2023-09-11T19:55:58.383Z",
+      "updated_at": "2023-09-11T19:55:58.383Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 16,
+    "fields": {
+      "name": "Тушкан",
+      "description": "Мексиканский тушкан обыкновенный",
+      "image": "categories/tuhkan.jpg",
+      "category": 6,
+      "price": 1000,
+      "created_at": "2023-09-11T19:57:30.805Z",
+      "updated_at": "2023-09-11T19:57:30.805Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 17,
+    "fields": {
+      "name": "Киса",
+      "description": "Животинное животное",
+      "image": "",
+      "category": 6,
+      "price": 1,
+      "created_at": "2023-09-26T17:41:54.717Z",
+      "updated_at": "2023-09-26T17:41:54.717Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 18,
+    "fields": {
+      "name": "Киса",
+      "description": "Животинное животное",
+      "image": "",
+      "category": 6,
+      "price": 1,
+      "created_at": "2023-09-26T17:44:51.812Z",
+      "updated_at": "2023-09-26T17:44:51.812Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 19,
+    "fields": {
+      "name": "Киса",
+      "description": "Животина",
+      "image": "",
+      "category": 6,
+      "price": 1,
+      "created_at": "2023-09-26T17:45:01.671Z",
+      "updated_at": "2023-09-26T17:45:01.671Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 20,
+    "fields": {
+      "name": "RRRR",
+      "description": "RRRR1",
+      "image": "",
+      "category": 6,
+      "price": 11,
+      "created_at": "2023-09-26T18:28:31.574Z",
+      "updated_at": "2023-09-26T19:39:22.097Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 21,
+    "fields": {
+      "name": "ееееппп",
+      "description": "ывафыаываыва",
+      "image": "",
+      "category": 5,
+      "price": 123,
+      "created_at": "2023-09-26T19:40:11.223Z",
+      "updated_at": "2023-09-26T19:40:11.223Z"
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 1,
+    "fields": {
+      "product": 9,
+      "number": 1,
+      "version_name": "Первая",
+      "is_active": false
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 2,
+    "fields": {
+      "product": 9,
+      "number": 2,
+      "version_name": "Вторая",
+      "is_active": true
+    }
+  }
+]
