@@ -1,10 +1,11 @@
+from django.conf import settings
 from django.db import transaction
 from django.forms import inlineformset_factory
 from django.shortcuts import render
 from django.urls import reverse_lazy
 
 from catalog.forms import ProductForm, VersionForm
-from catalog.models import Product, Version
+from catalog.models import Product, Version, Category
 from django.views.generic import ListView, DetailView, CreateView, UpdateView
 
 from users.models import User
@@ -18,13 +19,12 @@ class ProductListView(ListView):
 
 class ProductDetailView(DetailView):
     model = Product
-    template_name = 'catalog/product.html'
+    permission_required = 'catalog.view_product'
 
     def get_context_data(self, **kwargs):
         context_data = super().get_context_data(**kwargs)
         version = Version.objects.filter(product=context_data['object'], is_active=True).last()
         context_data['version'] = version
-
         return context_data
 
 def index2(request):

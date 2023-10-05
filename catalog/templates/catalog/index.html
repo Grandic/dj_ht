@@ -17,7 +17,7 @@
                                     <div class="btn-group">
                                         <ul class="list-unstyled text-small">
                                             {% if user.is_authenticated %}
-                                            <li><a class="text" href="{% url 'catalog:product' object.pk  %}">Описание</a></li>
+                                            <li><a class="text" href="{% url 'catalog:view_product' object.pk  %}">Описание</a></li>
                                             <li><a class="text" href="{% url 'catalog:update_product' object.pk  %}">Редактирование</a></li>
                                             {% endif %}
                                         </ul>

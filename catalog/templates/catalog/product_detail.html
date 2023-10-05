@@ -1,0 +1,26 @@
+{% extends 'catalog/base.html' %}
+
+{% block content %}
+
+<div class="col-6">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">
+                Информация о продукте
+            </h3>
+            <div class="features">
+                <h1> {{ object.name }}</h1>
+                <p>Категория: {{ сategory }}</p>
+                <p>Описание: {{object.description}}</p>
+                <p>Цена: {{object.price}}</p>
+                <p>Категория: {{object.category}}</p>
+                <p>Создан: {{object.created_at}}</p>
+                <p>Обновлен: {{object.updated_at}}</p>
+                <p>Версия: {{version.number}}</p>
+                <p>Владелец: {{version.owner}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
